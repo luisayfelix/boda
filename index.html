@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Luisa y Félix — Invitación</title>
+
+  <!-- Fuentes (puedes cambiarlas luego) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=La+Belle+Aurore&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav">
+    <div class="nav__brand">
+      <a href="#inicio" class="brand">Luisa y Félix</a>
+    </div>
+
+    <nav class="nav__links" aria-label="Navegación">
+      <a href="#fecha">Fecha</a>
+      <a href="#ubicacion">Ubicación</a>
+      <a href="#dresscode">Dress Code</a>
+      <a href="#rsvp">Confirmar Asistencia</a>
+    </nav>
+
+    <button class="nav__burger" aria-label="Abrir menú" aria-expanded="false">
+      ☰
+    </button>
+  </header>
+
+  <!-- HERO -->
+  <section id="inicio" class="hero" style="--hero-image: url('assets/hero.jpeg');">
+    <div class="hero__overlay"></div>
+
+    <div class="hero__content">
+      <h1 class="hero__title">Luisa y Félix</h1>
+
+      <div class="hero__meta">
+        <span>27 Enero, 2026</span>
+        <span class="dot">•</span>
+        <span>Calle San Francisco 110, Barranco</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERÍA / POLAROID -->
+  <section id="galeria-polaroid" class="section section--white">
+    <h2 class="script-title">Momentos Destacados</h2>
+
+    <div class="polaroid-grid" aria-label="Momentos destacados">
+      <figure class="polaroid p1">
+        <img src="assets/galeria/1.jpeg" alt="Luisa y Félix - Foto 1" loading="lazy">
+        <figcaption>Siempre juntos</figcaption>
+      </figure>
+
+      <figure class="polaroid p2">
+        <img src="assets/galeria/9.jpeg" alt="Luisa y Félix - Foto 9" loading="lazy">
+        <figcaption>Nuestro lugar</figcaption>
+      </figure>
+
+      <figure class="polaroid p3">
+        <img src="assets/galeria/3.jpeg" alt="Luisa y Félix - Foto 3" loading="lazy">
+        <figcaption>Un recuerdo</figcaption>
+      </figure>
+
+      <figure class="polaroid p4">
+        <img src="assets/galeria/4.jpeg" alt="Luisa y Félix - Foto 4" loading="lazy">
+        <figcaption>Felicidad</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- GALERÍA / CARRUSEL -->
+  <section id="galeria" class="section section--white">
+    <h2 class="script-title">Nosotros</h2>
+
+    <div class="carousel" aria-label="Galería de fotos">
+      <button class="carousel__btn carousel__btn--prev" type="button" aria-label="Foto anterior">‹</button>
+
+      <div class="carousel__viewport">
+        <div class="carousel__track">
+          <!-- Cambia los src por tus fotos -->
+          <img class="carousel__slide" src="assets/galeria/2.jpeg" alt="Luisa y Félix - Foto 2" loading="lazy">
+          
+          <div class="carousel__slide is-portrait">
+            <img src="assets/galeria/10.jpeg" alt="Luisa y Félix - Foto 10" loading="lazy">
+          </div>
+          
+          <img class="carousel__slide" src="assets/galeria/5.jpeg" alt="Luisa y Félix - Foto 5" loading="lazy">
+          
+          <div class="carousel__slide is-portrait">
+            <img src="assets/galeria/16.jpeg" alt="Luisa y Félix - Foto 16" loading="lazy">
+          </div>
+          
+          <img class="carousel__slide" src="assets/galeria/6.jpeg" alt="Luisa y Félix - Foto 6" loading="lazy">
+          
+          <div class="carousel__slide is-portrait">
+            <img src="assets/galeria/12.jpeg" alt="Luisa y Félix - Foto 12" loading="lazy">
+          </div>
+          
+          <img class="carousel__slide" src="assets/galeria/7.jpeg" alt="Luisa y Félix - Foto 7" loading="lazy">
+          
+          <div class="carousel__slide is-portrait">
+            <img src="assets/galeria/8.jpeg" alt="Luisa y Félix - Foto 8" loading="lazy">
+          </div>
+
+          <img class="carousel__slide" src="assets/galeria/11.jpeg" alt="Luisa y Félix - Foto 11" loading="lazy">
+          
+          <div class="carousel__slide is-portrait">
+            <img src="assets/galeria/13.jpeg" alt="Luisa y Félix - Foto 13" loading="lazy">
+          </div>
+
+          <div class="carousel__slide is-portrait">
+            <img src="assets/galeria/15.jpeg" alt="Luisa y Félix - Foto 15" loading="lazy">
+          </div>
+        </div>
+      </div>
+
+      <button class="carousel__btn carousel__btn--next" type="button" aria-label="Foto siguiente">›</button>
+    </div>
+
+    <div class="carousel__dots" aria-label="Indicadores del carrusel"></div>
+  </section>
+
+  <!-- FECHA + COUNTDOWN -->
+  <section id="fecha" class="section section--white">
+    <h2 class="script-title">27 de Enero - 3:30pm</h2>
+
+    <div class="countdown" aria-label="Cuenta regresiva">
+      <div class="timebox">
+        <div id="d" class="timebox__num">00</div>
+        <div class="timebox__label">Días</div>
+      </div>
+      <div class="timebox">
+        <div id="h" class="timebox__num">00</div>
+        <div class="timebox__label">Horas</div>
+      </div>
+      <div class="timebox">
+        <div id="m" class="timebox__num">00</div>
+        <div class="timebox__label">Minutos</div>
+      </div>
+      <div class="timebox">
+        <div id="s" class="timebox__num">00</div>
+        <div class="timebox__label">Segundos</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- UBICACION -->
+  <section id="ubicacion" class="section">
+    <h2 class="script-title big">Calle San Francisco 110,<br/>Barranco</h2>
+
+    <div class="map-wrap">
+      <iframe
+        class="map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3900.5118062482056!2d-77.02231878899431!3d-12.145518888049423!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105b7f197454fb7%3A0x192bce328899b1a6!2sC.%20San%20Francisco%20110%2C%20Barranco%2015063!5e0!3m2!1ses!2spe!4v1768162542654!5m2!1ses!2spe"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Mapa: Calle San Francisco 110, Barranco">
+      </iframe>
+    </div>
+
+    <div class="actions">
+      <a class="btn btn--ghost" target="_blank" rel="noopener"
+         href="https://www.google.com/maps?q=Calle%20San%20Francisco%20110%20Barranco">
+        Abrir en Google Maps
+      </a>
+    </div>
+  </section>
+
+  <!-- DRESS CODE -->
+  <section id="dresscode" class="section section--white">
+    <div class="grid">
+      <div>
+        <h2 class="script-title">Elegante Casual</h2>
+        <p class="text">
+          Celebramos al aire libre, en un jardín y en una tarde de verano. Les sugerimos elegir colores vivos,
+          elegantes y telas livianas que acompañen la fiesta y el clima.
+          <br><br>
+          <strong>Para mantener la armonía de la boda les pedimos evitar el color negro.</strong>
+        </p>
+      </div>
+
+      <div class="dress-icon">
+        <img src="assets/dresscode.png" alt="Icono dress code" />
+      </div>
+    </div>
+  </section>
+
+  <!-- RSVP -->
+  <section id="rsvp" class="rsvp" style="--rsvp-image: url('assets/hands.jpeg');">
+    <div class="rsvp__overlay"></div>
+
+    <div class="rsvp__content">
+      <h2 class="script-title rsvp__title">Nos Casamos</h2>
+      <p class="rsvp__text">
+        Nos haría muy felices que nos acompañes en este importante momento de nuestras vidas.
+      </p>
+
+      <p class="rsvp__text" style="padding-top:-180px;">
+        Confirmar asistencia hasta el <strong>21/01/2026</strong>.
+      </p>
+      
+      <a class="btn btn--pink" target="_blank" rel="noopener"
+        href="https://docs.google.com/forms/d/e/1FAIpQLSdQ3Ehd5DUK_J3czk89kFoIOafbYSZU4mheEwyhJRXmUxpqng/viewform?usp=sharing&ouid=117925503936649567222">
+        Confirmar Asistencia
+      </a>
+
+      <p class="rsvp__text">
+        La confirmarción es personal.
+      </p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <small>Luisa y Félix • 27.01.2026</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
